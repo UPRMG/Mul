@@ -21,13 +21,9 @@ while True:
 
 # LOTTO
 import random
-n = []
-while len(n) < 6:
-	rn = random.randint(1, 45)
-	if rn not in n :
-		n.append(rn)
-n.sort()
-print(n)
+rn = random.sample(range(1, 46), 6)
+rn.sort()
+print(rn)
 
 
 # FizzBuzz
