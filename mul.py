@@ -1,9 +1,9 @@
-# 원하는 수들의 곱셈
+# Multiple
 i = int(input("insert 1number : "))
 j = int(input("insert 2number : "))
 print (i, "*", j, "=", i*j)
 
-# UP & DOWN 게임
+# UP & DOWN
 import random
 rn = random.randint(1, 100)
 count = 0
@@ -19,7 +19,7 @@ while True:
 		print(count)
 		break
 
-# 로또 번호 뽑기
+# LOTTO
 import random
 n = []
 while len(n) < 6:
@@ -30,15 +30,16 @@ n.sort()
 print(n)
 
 
-# 별표찍기
-n = int(input"insert number : "))
-s = n // 2
-for star in range(1, n, 2):
-	print(" " * s + "*" * star)
-	s += 1
+# FizzBuzz
+n = int(input("insert your choice number : "))
 
-
-
-
-
+for i in range(1, n + 1):
+	if i %3 == 0 :
+		print("Fizz")
+	elif i %5 == 0 :
+		print("Buzz")
+	elif i %15 == 0 :
+		print("FizzBuzz")
+	else :
+		print(i)
 
