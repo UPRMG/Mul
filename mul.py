@@ -30,6 +30,15 @@ n.sort()
 print(n)
 
 
+# 별표찍기
+n = int(input"insert number : "))
+s = n // 2
+for star in range(1, n, 2):
+	print(" " * s + "*" * star)
+	s += 1
+
+
+
 
 
 
